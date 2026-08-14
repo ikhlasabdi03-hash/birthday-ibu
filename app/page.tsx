@@ -225,7 +225,7 @@ export default function Home() {
   className="relative flex min-h-screen flex-col items-center justify-center px-8 text-center"
 >
       <p className="mb-4 text-sm tracking-[0.3em] uppercase text-[#c9a98f]">
-        Just for you
+        Sebuah hadiah kecil
       </p>
 
       <h1 className="text-4xl font-semibold">
@@ -295,7 +295,7 @@ setScene(1);
   transition={{ duration: 0.8 }}
   className="text-sm tracking-[0.25em] uppercase text-[#c9a98f]"
 >
-  For you, Ibu
+  Tentang ibu
 </motion.p>
 
 <motion.h2
@@ -304,8 +304,8 @@ setScene(1);
   transition={{ delay: 0.8, duration: 0.9 }}
   className="mt-6 text-3xl font-medium leading-relaxed"
 >
-  Untuk perempuan yang setiap hari
-  mengurus begitu banyak hal.
+Tentang Ibu yang bekerja sebagai guru.
+Tentang Ibu yang setelah pulang masih mengurus rumah.
 </motion.h2>
 
 <motion.p
@@ -314,10 +314,7 @@ setScene(1);
   transition={{ delay: 1.9, duration: 0.9 }}
   className="mt-6 text-xl text-[#c9bdb4]"
 >
-  Ibu bekerja sebagai guru.
-  <br />
-  Tapi setelah pulang,
-  masih ada rumah yang harus selalu diurus.
+Tentang banyak hal yang Ibu kerjakan sendiri, tanpa banyak mengeluh.
 </motion.p>
 
 <motion.p
@@ -326,7 +323,7 @@ setScene(1);
   transition={{ delay: 3.2, duration: 1 }}
   className="mt-10 text-2xl font-medium"
 >
-  Dulu, aku mungkin belum benar-benar melihat semua yang ibu lakukan.
+  Dulu, semua itu terasa seperti bagian biasa dari hari-hari Ibu.
 </motion.p>
 
 <motion.button
@@ -380,8 +377,7 @@ setScene(1);
         className="mt-6"
       >
         <p className="leading-8 text-[#c9bdb4]">
-          Dan ternyata, ada banyak sisi ibu
-          yang belum pernah benar-benar aku perhatikan.
+          Dan ternyata, ada banyak hal tentang Ibu yang dulu terasa biasa, tapi sekarang ku lihat dengan cara yang berbeda.
         </p>
       </motion.div>
 
@@ -442,7 +438,7 @@ setScene(1);
           >
 
             <p className="mt-8 leading-8 text-[#c9bdb4]">
-              Mungkin karena selama ini, aku hanya mengenal ibu sebagai ibu.
+              Dan rasanya, ada banyak hal yang ingin aku ucapkan setelah melihatnya kembali.
             </p>
 
 
@@ -520,8 +516,7 @@ setScene(1);
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 2, duration: 1 }}
         >
-          Terima kasih untuk semua yang ibu lakukan,
-bahkan untuk hal-hal kecil yang dulu mungkin nggak pernah aku sadari.
+          Terima kasih untuk semua yang sudah ibu lakukan, untuk hal-hal kecil yang dulu mungkin nggak pernah aku sadari.
         </motion.p>
 
 
@@ -530,9 +525,7 @@ bahkan untuk hal-hal kecil yang dulu mungkin nggak pernah aku sadari.
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 3.3, duration: 1 }}
         >
-          Terima kasih sudah selalu berusaha,
-selalu mengurus begitu banyak hal,
-dan tetap menjadi ibu yang selalu ada untukku.
+          Terima kasih sudah selalu berusaha, mengurus begitu banyak hal, dan tetap menjadi Ibu yang selalu ada untukku.
         </motion.p>
 
 
@@ -550,7 +543,7 @@ tapi aku benar-benar bersyukur punya ibu seperti ibu.
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 4.6, duration: 1 }}
         >
-          Saat ini aku belum bisa melakukan banyak hal untuk ibu, atau membalas semua yang sudah ibu berikan. Tapi aku ingin suatu hari nanti bisa membuat ibu merasa bangga dan bahagia, seperti ibu yang selalu berusaha melakukan yang terbaik untukku.
+          Aku mungkin belum bisa membalas semua yang Ibu berikan. Tapi semoga suatu hari nanti, aku bisa membuat Ibu bahagia dengan caraku sendiri.
         </motion.p>
 
 
