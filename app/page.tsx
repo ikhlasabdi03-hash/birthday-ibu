@@ -318,7 +318,7 @@ Tentang ibu yang setelah pulang masih mengurus rumah.
 <motion.p
   initial={{ opacity: 0, y: 10 }}
   animate={{ opacity: 1, y: 0 }}
-  transition={{ delaih y: 1.9, duration: 0.9 }}
+  transition={{ delay: 1.9, duration: 0.9 }}
   className="mt-6 text-xl text-[#c9bdb4]"
 >
 Tentang banyak hal yang ibu kerjakan sendiri, tanpa banyak mengeluh.
