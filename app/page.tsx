@@ -71,13 +71,6 @@ export default function Home() {
   "/ibu6.jpeg",
 ];
 
-useEffect(() => {
-  photos.forEach((src) => {
-    const img = new Image();
-    img.src = src;
-  });
-}, []);
-
   return (
 <main
   className="
