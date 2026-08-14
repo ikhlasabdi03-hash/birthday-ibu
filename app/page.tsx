@@ -383,15 +383,15 @@ Tentang banyak hal yang Ibu kerjakan sendiri, tanpa banyak mengeluh.
 
 
       {/* PHOTO */}
-<div className="mx-auto mt-8 flex h-[260px] w-full max-w-[340px] items-center justify-center">
+<div className="mx-auto mt-8 flex h-[260px] w-full max-w-[340px] items-center justify-center overflow-hidden">
   <AnimatePresence mode="wait">
     <motion.div
       key={photos[photoIndex]}
-      initial={{ opacity: 0, scale: 0.96 }}
-      animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 1.02 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
       transition={{
-        duration: 1,
+        duration: 0.8,
         ease: "easeInOut",
       }}
       className="flex h-full w-full items-center justify-center"
@@ -525,7 +525,7 @@ Tentang banyak hal yang Ibu kerjakan sendiri, tanpa banyak mengeluh.
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 3.3, duration: 1 }}
         >
-          Terima kasih sudah selalu berusaha, mengurus begitu banyak hal, dan tetap menjadi Ibu yang selalu ada untukku.
+          Terima kasih sudah selalu berusaha, mengurus begitu banyak hal, dan tetap menjadi ibu yang selalu ada untukku.
         </motion.p>
 
 
@@ -543,7 +543,7 @@ tapi aku benar-benar bersyukur punya ibu seperti ibu.
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 4.6, duration: 1 }}
         >
-          Aku mungkin belum bisa membalas semua yang Ibu berikan. Tapi semoga suatu hari nanti, aku bisa membuat Ibu bahagia dengan caraku sendiri.
+          Aku mungkin belum bisa membalas semua yang ibu berikan. Tapi semoga suatu hari nanti, aku bisa membuat Ibu bahagia dengan caraku sendiri.
         </motion.p>
 
 
