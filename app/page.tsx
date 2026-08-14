@@ -9,17 +9,44 @@ export default function Home() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
   const audioRef = useRef<HTMLAudioElement | null>(null);
-  
+
+  // Stop music when leaving / hiding the website
   useEffect(() => {
-  if (scene !== 2) return;
-  if (photoIndex >= photos.length - 1) return;
+    const handleVisibilityChange = () => {
+      const audio = audioRef.current;
 
-  const timer = setTimeout(() => {
-    setPhotoIndex((current) => current + 1);
-  }, 3000);
+      if (!audio) return;
 
-  return () => clearTimeout(timer);
-}, [scene, photoIndex]);
+      if (document.hidden) {
+        audio.pause();
+        setIsPlaying(false);
+      }
+    };
+
+    document.addEventListener(
+      "visibilitychange",
+      handleVisibilityChange
+    );
+
+    return () => {
+      document.removeEventListener(
+        "visibilitychange",
+        handleVisibilityChange
+      );
+    };
+  }, []);
+
+  // Photo slideshow
+  useEffect(() => {
+    if (scene !== 2) return;
+    if (photoIndex >= photos.length - 1) return;
+
+    const timer = setTimeout(() => {
+      setPhotoIndex((current) => current + 1);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, [scene, photoIndex]);
 
   const toggleMusic = () => {
     const audio = audioRef.current;
