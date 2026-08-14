@@ -71,6 +71,13 @@ export default function Home() {
   "/ibu6.jpeg",
 ];
 
+useEffect(() => {
+  photos.forEach((src) => {
+    const img = new Image();
+    img.src = src;
+  });
+}, []);
+
   return (
 <main
   className="
@@ -304,17 +311,17 @@ setScene(1);
   transition={{ delay: 0.8, duration: 0.9 }}
   className="mt-6 text-3xl font-medium leading-relaxed"
 >
-Tentang Ibu yang bekerja sebagai guru.
-Tentang Ibu yang setelah pulang masih mengurus rumah.
+Tentang ibu yang bekerja sebagai guru.
+Tentang ibu yang setelah pulang masih mengurus rumah.
 </motion.h2>
 
 <motion.p
   initial={{ opacity: 0, y: 10 }}
   animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 1.9, duration: 0.9 }}
+  transition={{ delaih y: 1.9, duration: 0.9 }}
   className="mt-6 text-xl text-[#c9bdb4]"
 >
-Tentang banyak hal yang Ibu kerjakan sendiri, tanpa banyak mengeluh.
+Tentang banyak hal yang ibu kerjakan sendiri, tanpa banyak mengeluh.
 </motion.p>
 
 <motion.p
@@ -383,8 +390,8 @@ Tentang banyak hal yang Ibu kerjakan sendiri, tanpa banyak mengeluh.
 
 
       {/* PHOTO */}
-<div className="mx-auto mt-8 flex h-[260px] w-full max-w-[340px] items-center justify-center overflow-hidden">
-  <AnimatePresence mode="wait">
+<div className="relative mx-auto mt-8 h-[260px] w-full max-w-[340px] overflow-hidden">
+  <AnimatePresence initial={false}>
     <motion.div
       key={photos[photoIndex]}
       initial={{ opacity: 0 }}
@@ -394,7 +401,7 @@ Tentang banyak hal yang Ibu kerjakan sendiri, tanpa banyak mengeluh.
         duration: 0.8,
         ease: "easeInOut",
       }}
-      className="flex h-full w-full items-center justify-center"
+      className="absolute inset-0 flex items-center justify-center"
     >
       <img
         src={photos[photoIndex]}
@@ -412,7 +419,6 @@ Tentang banyak hal yang Ibu kerjakan sendiri, tanpa banyak mengeluh.
     </motion.div>
   </AnimatePresence>
 </div>
-
 
       {/* PHOTO NUMBER */}
       <motion.p
@@ -543,7 +549,7 @@ tapi aku benar-benar bersyukur punya ibu seperti ibu.
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 4.6, duration: 1 }}
         >
-          Aku mungkin belum bisa membalas semua yang ibu berikan. Tapi semoga suatu hari nanti, aku bisa membuat Ibu bahagia dengan caraku sendiri.
+          Aku mungkin belum bisa membalas semua yang ibu berikan. Tapi semoga suatu hari nanti, aku bisa membuat ibu bahagia dengan caraku sendiri.
         </motion.p>
 
 
@@ -607,7 +613,7 @@ tapi aku benar-benar bersyukur punya ibu seperti ibu.
         transition={{ delay: 0.8, duration: 1 }}
         className="text-sm tracking-[0.25em] uppercase text-[#c9a98f]"
       >
-        One last thing
+        Terakhir
       </motion.p>
 
 
